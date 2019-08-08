@@ -15,11 +15,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class PhoneBookPage {
 
-  contactArray = [{name: 'Ju', telephone: '0934868898',imageUrl: 'assets/imgs/JPG1.jpg'},
-                  {name: 'Tim', telephone: '0936681712',imageUrl: 'assets/imgs/JPG2.jpg'},
-                  {name: 'ma', telephone: '0897455689',imageUrl: 'assets/imgs/JPG3.jpg'},
-                  {name: 'ma', telephone: '0897455689',imageUrl: 'assets/imgs/JPG4.jpg'},
-                  {name: 'ma', telephone: '0897455689',imageUrl: 'assets/imgs/JPG5.jpg'},
+  contactArray = [{name: 'ma', telephone: '0897455689'},
+                  {name: 'ma', telephone: '0897455689'},
+                  {name: 'ma', telephone: '0897455689'},
+                  {name: 'ma', telephone: '0897455689'},
                   ];
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
@@ -29,8 +28,4 @@ export class PhoneBookPage {
     console.log('ionViewDidLoad PhoneBookPage');
   }
 
-  viewDetail(item){
-    this.navCtrl.push("PhonebookDetailPage",item);
-  }
-  
 }//n
